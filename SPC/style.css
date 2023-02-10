@@ -1,0 +1,739 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+} 
+
+.full-page {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(218, 218, 218, 0.4),rgba(218, 218, 218, 0.4)), url(./img/bg-6.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 30px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+    
+}
+
+
+nav ul li {
+    display: inline-block;
+    margin-right: 50px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-family: sans-serif;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+
+    color: white;
+    
+}
+
+.form-box {
+    width: 340px;
+    height: 480px;
+    position: relative;
+    margin: 1% auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    overflow: hidden;
+}
+
+.button-box {
+    width: 200px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #f800001f;
+    border-radius: 30px;
+}
+
+.login-head
+{
+    margin: 30px 20%;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 15px;
+}
+/* .button-box-admin {
+
+    width: 100px;
+    margin: 35px 10px;
+    position: relative;
+    box-shadow: 0 0 20px 9px #f800001f;
+    border-radius: 30px;
+
+} */
+
+.toggle-btn {
+    padding: 10px 27.2px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+}
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(to right, #ff3410, #ff0101);
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+/* #btn-admin{
+
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 310px;
+    height: 100%;
+    background: linear-gradient(to right, #ff3410, #ff0101);
+    border-radius: 30px;
+
+
+} */
+
+.input-group {
+    top: 150px;
+    position: absolute;
+    width: 220px;
+    transition: 0.2s;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    color: white;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background:transparent ; 
+
+}
+
+::placeholder { 
+    color: white;
+    opacity: 0.6; 
+  }
+
+.submit-btn {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff3410, #ff0101);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+
+}
+
+.check-box {
+    margin: 30px 10px 30px 0;
+}
+
+span {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    bottom: 68px;
+    position: absolute;
+}
+
+#login {
+    left: 50px;
+}
+
+#register {
+    left: 450px;
+    top: 110px;
+}
+
+#rgstrbtn {
+    margin-top: 40px;
+}
+
+/* Admin */
+
+.admin-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./img/bg-7.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.admin-Navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.admin-Navbar li a:hover{
+    color:red;
+    background-color: white;
+}
+
+.admin-logo {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#btnlogout {
+    padding:10px 30px ;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 10px;
+}
+
+.admin-Navbar li {
+    font-size: 16px;
+}
+
+.admin-head {
+    margin-top: 40vh;
+    margin-left: 5%;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+
+
+.admin-second-section {
+    background-color: whitesmoke;
+    height: 100vh;
+    
+
+}
+
+.second-content-admin {
+    margin: 20px 20px;
+    background-color: rgba(243, 8, 8);
+    height: 97vh;
+    border-radius: 10px;
+}
+
+#second-section-title {
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(238, 230, 230, 1);
+    letter-spacing: 8px;
+}
+
+.inputstaff::placeholder{
+    color: black;
+    opacity: 0.6;
+}
+
+.inputstaff{
+    padding: 5px 5px;
+
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#input-field-admin{
+    position: relative;
+    left: 8%;
+    margin-top: 50px;
+    
+}
+
+#GDVstaff{
+    position:relative;
+    left:18%;
+    width:100%;
+
+}
+
+#staffGDV{
+    position:relative;
+    left:18px;
+    width:100%;
+    top:0;
+
+
+}
+
+
+#GDVpharmacy{
+    position:relative;
+    left:15%;
+    width:100%;
+
+}
+
+#pharmacyGDV{
+    position:relative;
+    left:15px;
+    width:100%;
+    top:0;
+}
+
+#GDVmedicine{
+    position:relative;
+    left:0%;
+    width:100%;
+
+}
+
+#medicineGDV{
+    position:relative;
+    left:10px;
+    width:100%;
+    top:0;
+}
+/* Tables*/
+
+
+#GDVstaff{
+    position= relative;
+
+}
+
+#GDVpharmacy {
+    position= relative;
+}
+
+#GDVmedicine{    top: -22px;
+}
+
+
+/* Finish Table */
+#btn-staff{
+    position: relative;
+    left:30%;
+    top: -6px;
+}
+
+.btnstaff {
+    height: 30px;
+    width: 150px;
+    background-color: rgb(2, 2, 2,0.7);
+    color: rgb(248, 246, 246, 0.9);
+    font-weight: bolder;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btnpharmacies {
+    height: 30px;
+    width: 150px;
+    background-color: rgb(2, 2, 2,0.7);
+    color: rgb(248, 246, 246, 0.9);
+    font-weight: bolder;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.admin-third-section{
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+.third-content-admin {
+    margin: 0 0;
+    background-color: rgb(70, 70, 70);
+    height: 97vh;
+    
+}
+
+#third-section-title {
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(238, 230, 230, 1);
+    letter-spacing: 8px;
+}
+
+.inputpharmacies::placeholder{
+    color: black;
+    opacity: 0.6;
+}
+
+.inputpharmacies{
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+#input-field-pharmacies{
+    position: relative;
+    left: 2%;
+    margin-top: 50px;
+    
+}
+
+#btn-pharmacies{
+    position: relative;
+    left:27%;
+}
+
+.btnpharmacies {
+    height: 30px;
+    width: 150px;
+    background-color: rgb(2, 2, 2,0.7);
+    color: rgb(248, 246, 246, 0.9);
+    font-weight: bolder;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.admin-fourth-section {
+    background-color: whitesmoke;
+    height: 100vh;
+    
+
+}
+
+.fourth-content-admin {
+    margin: 20px 20px;
+    background-color: rgba(243, 8, 8);
+    height: 97vh;
+    border-radius: 10px;
+}
+
+#fourth-section-title {
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(238, 230, 230, 1);
+    letter-spacing: 8px;
+}
+
+.inputstock::placeholder{
+    color: black;
+    opacity: 0.6;
+}
+
+.inputstock{
+    padding: 5px 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+#input-field-stock{
+    position: relative;
+    left: 2%;
+    margin-top: 50px;
+    
+}
+
+#btn-stock{
+    position: relative;
+    left:27%;
+}
+
+.btnstock {
+    height: 30px;
+    width: 150px;
+    background-color: rgb(2, 2, 2,0.7);
+    color: rgb(248, 246, 246, 0.9);
+    font-weight: bolder;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.admin-footer {
+    height: 20vh;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    
+}
+
+.admin-footer ul li{
+    display: inline-block;
+    margin-top: 20px;
+    
+    margin-left: 10%;
+    padding: 10px 10px;
+    
+}
+
+.admin-footer ul li:hover{
+    background-color: white;
+    
+}
+
+.admin-footer ul li a {
+    text-decoration: none;
+    padding: 10px 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.admin-footer ul li a:hover{
+   color:red; 
+}
+.footer-title{
+    margin-top: 50px;
+    margin-left: 27%;
+}
+
+ /* Pharmacy */
+
+ /* Header */
+
+ .supplier-bg {
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./img/bg-7.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.supplier-Navbar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.supplier-Navbar li a:hover{
+    color:red;
+    background-color: white;
+}
+
+.supplier-logo {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+.supplier-Navbar li {
+    font-size: 16px;
+}
+
+.supplier-head {
+    margin-top: 40vh;
+    margin-left: 5%;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+/* Suppier Second Part */
+
+.advertisement {
+    background-color: white;
+    height: auto;
+}
+
+.advertisement-bg{
+    margin: 20px 20px;
+    
+    
+}
+
+.advertisement-details {
+    padding: 10px;
+    background-color: rgb(182, 180, 180);
+    border-radius: 20px;
+
+    
+}
+
+.advertisement-details h3{
+    text-align: center;
+}
+
+.advertisement-details h4{
+    padding-bottom: 2px;
+    
+}
+
+.adver-prgph {
+    margin-top: 10px;
+    font-weight: 520;
+    margin-bottom: 20px;
+}
+
+
+#req-link{
+    text-decoration: none;
+    margin-left: 40%;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+/* Contact Form */
+
+.container-form {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#contact-section{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url(./img/bg-16.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.container-form h2{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-position: under;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.prgpgh-contact{
+
+    text-align: center;
+    width: 70%;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+    color: white;
+    letter-spacing: 3px;
+}
+
+
+.contact-form{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.form-info {
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 70px 0;
+}
+
+.contct-form{
+    padding: 10px;
+    margin:10px;
+
+    width: 70%;
+    background-color: rgba(136, 133, 133, 0.5);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.contct-form-txt{
+    padding: 10px;
+    margin: 10px;
+    width: 70%;
+    background-color: rgba(136, 133, 133, 0.5);
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.request{
+    width: 70%;
+    background: none;
+    padding: 4px;
+    outline: none;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    height: 33px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: 3%;
+    border: 2px solid rgb(190, 190, 190);
+    color: white;
+}
+
+.request:hover{
+    border: 2px solid rgb(247, 14, 14);
+    background: white;
+    color: rgb(247, 14, 14);
+}
+
+/* supplier footer */
+
+.supplier-footer {
+    height: 20vh;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    
+}
+
+.supplier-footer ul li{
+    display: inline-block;
+    margin-top: 20px;
+    
+    margin-left: 15%;
+    padding: 10px 10px;
+    
+}
+
+.supplier-footer ul li:hover{
+    background-color: white;
+    
+}
+
+.supplier-footer ul li a {
+    text-decoration: none;
+    padding: 10px 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.supplier-footer ul li a:hover{
+   color:red; 
+}
+
